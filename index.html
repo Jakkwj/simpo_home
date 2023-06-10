@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.4.0">
 <title data-rh="true">Home | SIMPO</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://cdn.jsdelivr.net/gh/Jakkwj/simpo_resource@master/simpo_resource/source/_static/images/main/logo3.png"><meta data-rh="true" name="twitter:image" content="https://cdn.jsdelivr.net/gh/Jakkwj/simpo_resource@master/simpo_resource/source/_static/images/main/logo3.png"><meta data-rh="true" property="og:url" content="https://jakkwj.github.io/"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Home | SIMPO"><meta data-rh="true" name="description" content="Description will go into a meta tag in &lt;head /&gt;"><meta data-rh="true" property="og:description" content="Description will go into a meta tag in &lt;head /&gt;"><link data-rh="true" rel="icon" href="https://cdn.jsdelivr.net/gh/Jakkwj/simpo_resource@master/simpo_resource/source/_static/images/ico/logo3.ico"><link data-rh="true" rel="canonical" href="https://jakkwj.github.io/"><link data-rh="true" rel="alternate" href="https://jakkwj.github.io/" hreflang="en"><link data-rh="true" rel="alternate" href="https://jakkwj.github.io/" hreflang="x-default"><script data-rh="true">function maybeInsertBanner(){window.__DOCUSAURUS_INSERT_BASEURL_BANNER&&insertBanner()}function insertBanner(){var n=document.getElementById("docusaurus-base-url-issue-banner-container");if(n){n.innerHTML='\n<div id="docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/</span>  (default value)</p>\n   <p>We suggest trying baseUrl = <span id="docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n';var e=document.getElementById("docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname,r="/"===s.substr(-1)?s:s+"/";e.innerHTML=r}}window.__DOCUSAURUS_INSERT_BASEURL_BANNER=!0,document.addEventListener("DOMContentLoaded",maybeInsertBanner)</script><link rel="stylesheet" href="/assets/css/styles.fffb450c.css">
-<link rel="preload" href="/assets/js/runtime~main.5ffdf1c9.js" as="script">
+<link rel="preload" href="/assets/js/runtime~main.d3c68615.js" as="script">
 <link rel="preload" href="/assets/js/main.12233d2c.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
@@ -14,71 +14,77 @@
     axisFormat  %Y-%m
     tickInterval 6month
     todayMarker on
-    title       Develop Timeline
+    title       Developed Timeline
     excludes    weekends
     section SIMPO
-    Core Function Development (Local)   :done, a1, 2018-01-01, 2021-01-01
-    Core Function Development (Web)     :done, a2, after a1, 2022-10-01
-    Core Function Stable                :milestone, ma2, after a2, 0d
-    Continuous Maintenance              :active, after a2, 2027-10-01
+    Basic Function Development (Local)      :crit, done, a1, 2018-01-01, 2020-10-01
+    Basic Function Development (Web)        :done, a2, after a1, 2022-10-01
+    Basic Version Stable                    :milestone, ma2, after a2, 0d
+    Continuous Maintenance                  :active, after a2, 2028-10-01
     section SIMPO Pro
-    Core Function Development (Local)   :done, b1, 2018-01-01, 2021-06-01
-    Core Function Development (Web)     :done, b2, after b1, 2022-12-01
-    Core Function Stable                :milestone, mb2, after b2, 0d
-    Continuous Maintenance              :active, after b2, 2027-10-01
+    Enhanced Function Development (Local)   :crit, done, b1, 2018-01-01, 2021-01-01
+    Enhanced Function Development (Web)     :done, b2, after b1, 2022-12-01
+    Enhanced Version Stable                 :milestone, mb2, after b2, 0d
+    Continuous Maintenance                  :active, after b2, 2028-10-01
     section SIMPO Dash
-    Core Function Development           :done, c1, 2018-10-01, 2023-01-01
-    Add FlowChart                       :crit, done, c12, after c1, 90d
-    Http to Https                       :done, c2, 2023-05-01, 2023-06-10
-    Add Estimaiton Engine               :crit, active, c3, after c2, 2023-08-01
-    Add Uncertainty Engine              :crit, c4, after c3, 2023-12-31
-    Add BioModel Composition            :c4a, after c4, 30d
-    Add Steady State                    :c4b, after c4, 30d
-    Add PlugFlow Reactor Type           :c4c, after c4b, 60d
-    Add BioFilm Reactor Type            :c4d, after c4c, 90d
-    Add Sewer Reactor Type              :c4e, after c4d, 90d
-    Core Function Stable                :milestone, mc1, after c4e, 0d
-    Standard Repositories               :crit, c5, after c4, 300d
-    Add AI Algorithm                    :crit, c6, after c4, 360d
-    Add CFD Algorithm                   :c7, after c6, 300d
-    Add 3D Digital Twin                 :c8, after c7, 300d
-    Add GPU capacity                    :c9, after c7, 300d
+    Frontend/Backend Function Development   :crit, done, c1, 2018-10-01, 2023-01-01
+    Basic Version Stable                    :milestone, mc1, after c1, 0d
+    Add FlowChart                           :crit, done, c12, after c1, 90d
+    Http to Https                           :done, c2, 2023-05-01, 2023-06-10
+    Add Estimaiton Engine                   :crit, active, c3, after c2, 2023-08-01
+    Add Uncertainty Engine                  :crit, c4, after c3, 2023-12-31
+    Add BioModel Composition                :c4a, after c4, 30d
+    Add Steady State                        :c4b, after c4, 30d
+    Add PlugFlow Reactor Type               :c4c, after c4b, 60d
+    Add BioFilm Reactor Type                :c4d, after c4c, 90d
+    Add Sewer Reactor Type                  :c4e, after c4d, 90d
+    Enhanced Function Stable                :crit, milestone, mc2, after c4e, 0d
+    Standard Repositories                   :crit, c5, after c4b, 300d
+    Add AI Algorithm                        :crit, c6, after c4e, 360d
+    Mechanism + Blackbox Model              :crit, milestone, mc3, after c6, 0d
+    Add CFD Algorithm                       :c7, after c6, 300d
+    Add 3D Digital Twin                     :c8, after c7, 300d
+    Add GPU capacity                        :c9, after c7, 300d
+    Continuous Maintenance                  :active, after c1, 2028-10-01
 ">gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %Y-%m
     tickInterval 6month
     todayMarker on
-    title       Develop Timeline
+    title       Developed Timeline
     excludes    weekends
     section SIMPO
-    Core Function Development (Local)   :done, a1, 2018-01-01, 2021-01-01
-    Core Function Development (Web)     :done, a2, after a1, 2022-10-01
-    Core Function Stable                :milestone, ma2, after a2, 0d
-    Continuous Maintenance              :active, after a2, 2027-10-01
+    Basic Function Development (Local)      :crit, done, a1, 2018-01-01, 2020-10-01
+    Basic Function Development (Web)        :done, a2, after a1, 2022-10-01
+    Basic Version Stable                    :milestone, ma2, after a2, 0d
+    Continuous Maintenance                  :active, after a2, 2028-10-01
     section SIMPO Pro
-    Core Function Development (Local)   :done, b1, 2018-01-01, 2021-06-01
-    Core Function Development (Web)     :done, b2, after b1, 2022-12-01
-    Core Function Stable                :milestone, mb2, after b2, 0d
-    Continuous Maintenance              :active, after b2, 2027-10-01
+    Enhanced Function Development (Local)   :crit, done, b1, 2018-01-01, 2021-01-01
+    Enhanced Function Development (Web)     :done, b2, after b1, 2022-12-01
+    Enhanced Version Stable                 :milestone, mb2, after b2, 0d
+    Continuous Maintenance                  :active, after b2, 2028-10-01
     section SIMPO Dash
-    Core Function Development           :done, c1, 2018-10-01, 2023-01-01
-    Add FlowChart                       :crit, done, c12, after c1, 90d
-    Http to Https                       :done, c2, 2023-05-01, 2023-06-10
-    Add Estimaiton Engine               :crit, active, c3, after c2, 2023-08-01
-    Add Uncertainty Engine              :crit, c4, after c3, 2023-12-31
-    Add BioModel Composition            :c4a, after c4, 30d
-    Add Steady State                    :c4b, after c4, 30d
-    Add PlugFlow Reactor Type           :c4c, after c4b, 60d
-    Add BioFilm Reactor Type            :c4d, after c4c, 90d
-    Add Sewer Reactor Type              :c4e, after c4d, 90d
-    Core Function Stable                :milestone, mc1, after c4e, 0d
-    Standard Repositories               :crit, c5, after c4, 300d
-    Add AI Algorithm                    :crit, c6, after c4, 360d
-    Add CFD Algorithm                   :c7, after c6, 300d
-    Add 3D Digital Twin                 :c8, after c7, 300d
-    Add GPU capacity                    :c9, after c7, 300d
+    Frontend/Backend Function Development   :crit, done, c1, 2018-10-01, 2023-01-01
+    Basic Version Stable                    :milestone, mc1, after c1, 0d
+    Add FlowChart                           :crit, done, c12, after c1, 90d
+    Http to Https                           :done, c2, 2023-05-01, 2023-06-10
+    Add Estimaiton Engine                   :crit, active, c3, after c2, 2023-08-01
+    Add Uncertainty Engine                  :crit, c4, after c3, 2023-12-31
+    Add BioModel Composition                :c4a, after c4, 30d
+    Add Steady State                        :c4b, after c4, 30d
+    Add PlugFlow Reactor Type               :c4c, after c4b, 60d
+    Add BioFilm Reactor Type                :c4d, after c4c, 90d
+    Add Sewer Reactor Type                  :c4e, after c4d, 90d
+    Enhanced Function Stable                :crit, milestone, mc2, after c4e, 0d
+    Standard Repositories                   :crit, c5, after c4b, 300d
+    Add AI Algorithm                        :crit, c6, after c4e, 360d
+    Mechanism + Blackbox Model              :crit, milestone, mc3, after c6, 0d
+    Add CFD Algorithm                       :c7, after c6, 300d
+    Add 3D Digital Twin                     :c8, after c7, 300d
+    Add GPU capacity                        :c9, after c7, 300d
+    Continuous Maintenance                  :active, after c1, 2028-10-01
 </div></div></div></main></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 SIMPO. All rights reserved.</div></div></div></footer><iframe id="iframeIfSign" src="https://dash.simpowater.org/ifsign"></iframe></div>
-<script src="/assets/js/runtime~main.5ffdf1c9.js"></script>
+<script src="/assets/js/runtime~main.d3c68615.js"></script>
 <script src="/assets/js/main.12233d2c.js"></script>
 </body>
 </html>
